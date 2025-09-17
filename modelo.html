@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="snow">
-  <header class="header header--scrolled">
+  <header class="header" id="site-header">
     <div class="container header__wrap">
       <a class="brand" href="../index/index.html">
-        <img src="../img/foto1.webp" class="logo" alt="Voltar para o índice" />
+        <img src="foto1.webp" class="logo glow-ring" alt="Voltar para o índice" />
         <div class="brand__text">
           <strong>EXPO PT 2025</strong>
           <span>Página do Subtema</span>
         </div>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegação principal">
         <a class="nav__link" href="#projeto">Projeto</a>
         <a class="nav__link" href="#conteudo">Conteúdo</a>
         <a class="nav__link" href="#galeria">Galeria</a>
@@ -35,7 +35,7 @@
     <!-- PROJETO -->
     <section id="projeto" class="section">
       <div class="container">
-        <div class="block">
+        <div class="block glow-ring">
           <h2>Projeto</h2>
           <p><strong>Título:</strong> <span id="titulo-projeto">Definir título</span></p>
           <p class="muted" id="descricao-projeto">Descrição breve do que será apresentado (objetivo, justificativa, produtos finais).</p>
@@ -44,7 +44,6 @@
             <ul id="integrantes" class="muted"><li>—</li></ul>
           </details>
         </div>
-  
       </div>
     </section>
 
@@ -100,7 +99,7 @@
             <label><input type="radio" name="q1" value="sim"> Sim</label>
             <label><input type="radio" name="q1" value="nao"> Não</label><br><br>
             <button class="btn" type="submit">Ver resultado</button>
-            <p id="resultado" class="result muted"></p>
+            <p id="resultado" class="result muted" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -114,7 +113,24 @@
     </div>
   </footer>
 
+  <!-- Camada de gelo (canvas) -->
+  <canvas id="iceLayer" aria-hidden="true"></canvas>
+
+  <!-- Interações -->
   <script>
+    // Header reativo (sombra ao rolar)
+    const header = document.getElementById('site-header') || document.querySelector('.header');
+    const onScroll = () => header?.classList.toggle('header--scrolled', window.scrollY > 8);
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    // Ripple nos botões (usa --x e --y do CSS)
+    addEventListener('pointerdown', e => {
+      const t = e.target.closest('.btn'); if (!t) return;
+      const r = t.getBoundingClientRect();
+      t.style.setProperty('--x', (e.clientX - r.left) + 'px');
+      t.style.setProperty('--y', (e.clientY - r.top) + 'px');
+    });
+
     // Preenche turma/subtema via querystring
     const p = new URLSearchParams(location.search);
     const turma = p.get('turma') || '—';
@@ -122,26 +138,27 @@
     document.getElementById('turma').textContent = turma;
     document.getElementById('subtema').textContent = subtema;
 
-    // Antes / Depois
+    // Compare slider (clip da imagem "after")
     const comp = document.querySelector('.compare');
     const after = comp?.querySelector('.after');
     const range = comp?.querySelector('input[type="range"]');
-    range?.addEventListener('input', (ev)=>{
+    range?.addEventListener('input', (ev) => {
       const v = ev.target.value;
-      after.style.clipPath = `inset(0 ${100-v}% 0 0)`;
+      after.style.clipPath = `inset(0 ${100 - v}% 0 0)`;
     });
 
     // Quiz
     const form = document.getElementById('form-quiz');
     const res  = document.getElementById('resultado');
-    form?.addEventListener('submit', (e)=>{
+    form?.addEventListener('submit', (e) => {
       e.preventDefault();
       const ok = new FormData(form).get('q1') === 'sim';
-      res.textContent = ok ? 'Correto! O nível do mar pode subir com o derretimento de geleiras.' :
-                             'Ops! Reveja o conteúdo: o nível do mar pode subir.';
+      res.textContent = ok ? 'Correto! O nível do mar pode subir com o derretimento de geleiras.'
+                           : 'Ops! Reveja o conteúdo: o nível do mar pode subir.';
       res.className = 'result ' + (ok ? 'ok' : 'bad');
     });
   </script>
+  <!-- efeito de gelo (seu arquivo externo; agora usa <canvas id="iceLayer">) -->
   <script src="../js/icefall.js"></script>
 </body>
 </html>

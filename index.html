@@ -12,22 +12,22 @@
   <header id="site-header" class="header">
     <div class="container header__wrap">
       <a class="brand" href="#top">
-        <img src="../img/foto1.webp" alt="Colégio Paulo de Tarso" class="logo" />
+        <img src="foto1.webp" alt="Colégio Paulo de Tarso" class="logo" />
         <div class="brand__text">
           <strong>EXPO PT 2025</strong>
-          <span>Colégio Paulo de Tarso • 1º Técnico — Aluna Isabele</span>
+          <span>Colégio Paulo de Tarso</span>
         </div>
       </a>
-
       <nav class="nav" aria-label="Navegação principal">
         <a href="#convite" class="nav__link">Convite</a>
         <a href="#sobre" class="nav__link">Sobre</a>
         <a href="#salas" class="nav__link">Salas</a>
+        <a href="galeria.html" class="nav__link">Galeria</a>
       </nav>
     </div>
   </header>
 
-  <!-- CONVITE (NO TOPO) -->
+  <!-- CONVITE -->
   <section id="convite" class="section section--convite">
     <div class="container convite__wrap">
       <div class="convite__left">
@@ -46,11 +46,10 @@
         </div>
       </div>
       <figure class="convite__img" aria-label="Convite ilustrado">
-        <img src="../img/convite.jpg" alt="Convite EXPO PT 2025" />
+        <img src="VENHA-PARA-A-EXPOPT-E-DIVIRTA-SE-removebg-preview.webp" alt="Convite EXPO PT 2025" />
         <figcaption class="muted">Traga sua família e amigos!</figcaption>
       </figure>
     </div>
-    <!-- camada para gelo caindo -->
     <div id="iceLayer" aria-hidden="true"></div>
   </section>
 
@@ -69,10 +68,12 @@
         <svg class="ice-hero" viewBox="0 0 640 360" role="img" aria-label="Geleiras">
           <defs>
             <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#0b1522"/>
+              <stop offset="0%" stop-color="#7dd3fc"/>
+              <stop offset="100%" stop-color="#0b1522"/>
             </linearGradient>
             <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e0f7ff"/><stop offset="100%" stop-color="#a6e3ff"/>
+              <stop offset="0%" stop-color="#e0f7ff"/>
+              <stop offset="100%" stop-color="#a6e3ff"/>
             </linearGradient>
           </defs>
           <rect width="640" height="360" fill="url(#sky)"/>
@@ -89,10 +90,10 @@
     <div class="container">
       <h2>Sobre o evento</h2>
       <ul class="list">
-        <li>✔️A Expopt será uma exposição realizada no Colégio Paulo de Tarso, com o objetivo de apresentar
-           pesquisas, trabalhos e projetos feitos pelos alunos.</li>
-        <li>✔️ O tema principal deste ano será o derretimento das geleiras, um problema ambiental sério que afeta diretamente o clima, os oceanos e a vida no planeta.</li>
-        <li>✔️ Seções criativas (textos, infográficos, antes/depois, galeria, vídeo curto, quiz);</li>
+        <li>✔️ A EXPO PT 2025 será uma exposição realizada no Colégio Paulo de Tarso, com o objetivo de apresentar pesquisas, trabalhos e projetos feitos pelos alunos.</li>
+        <li>✔️ O tema principal deste ano é o <strong>Derretimento das Geleiras</strong>, declarado Ano Internacional das Geleiras pela UNESCO. O derretimento das geleiras impacta o clima global, os oceanos e a biodiversidade.</li>
+        <li>✔️ Seções criativas: textos, infográficos, antes/depois, galeria, vídeo curto e quiz.</li>
+        <li>✔️ Convidamos você a participar da composição da galeria de fotos do evento — registre momentos e ajude a construir a memória da EXPO PT!</li>
         <li>✔️ Rodapé com créditos dos responsáveis pelo site.</li>
       </ul>
     </div>
@@ -106,7 +107,6 @@
         <button class="chip is-active" data-filter="todos">Todos</button>
         <button class="chip" data-filter="fund2">Fundamental II (6º–9º)</button>
         <button class="chip" data-filter="medio">Ensino Médio (1º–3º)</button>
-        <button class="chip" data-filter="tecnico">1º EM Técnico</button>
       </div>
     </div>
   </section>
@@ -115,7 +115,6 @@
   <section id="salas" class="section">
     <div class="container">
       <h2>Salas & Subtemas</h2>
-
       <div id="grid" class="grid">
         <!-- 6º A/B -->
         <article class="card" data-tags="fund2 mitos verdades 6ab grupo1">
@@ -123,14 +122,14 @@
           <h3>6º A/B</h3>
           <p class="muted">Divergências em relação ao tema • Mitos e Verdades</p>
           <details class="people">
-            <summary>Integrantes</summary>
+            <summary>Desenvolvedores</summary>
             <ul>
               <li>ANA FLÁVIA PACOVA DOS SANTOS</li>
               <li>Lucas Lohan Felix Araújo</li>
               <li>GABRIEL OLIVEIRA ROSA</li>
             </ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=6º%20A/B&subtema=Mitos%20e%20Verdades">Abrir página</a></div>
+          <div class="cta"><a class="btn btn--card" href="https://hzy1kk.github.io/expt-6A">Abrir página</a></div>
         </article>
 
         <!-- 7º A/B -->
@@ -139,14 +138,14 @@
           <h3>7º A/B</h3>
           <p class="muted">Emissão de CO₂ e aumento de temperatura</p>
           <details class="people">
-            <summary>Integrantes</summary>
+            <summary>Desenvolvedores</summary>
             <ul>
               <li>PEDRO HENRIQUE FLORENCIO</li>
               <li>RODRIGO HERNANDES TARIFA</li>
               <li>PEDRO YAN CHIN SO HUANG</li>
             </ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=7º%20A/B&subtema=Emissão%20de%20CO₂">Abrir página</a></div>
+          <div class="cta"><a class="btn btn--card" href="https://phzineasygame.github.io/neo-expopt">Abrir página</a></div>
         </article>
 
         <!-- 8º A/B -->
@@ -155,140 +154,14 @@
           <h3>8º A/B</h3>
           <p class="muted">Redução de água doce no mundo e impactos</p>
           <details class="people">
-            <summary>Integrantes</summary>
+            <summary>Desenvolvedores</summary>
             <ul>
               <li>Pietro Moliani*</li>
               <li>FELIPE PRATES FARIAS</li>
               <li>PIETRO B. C. QUINQUEIRO</li>
             </ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=8º%20A/B&subtema=Redução%20de%20Água%20Doce">Abrir página</a></div>
+          <div class="cta"><a class="btn btn--card" href="#">Abrir página</a></div>
         </article>
 
-        <!-- 9º A/B -->
-        <article class="card" data-tags="fund2 9ab geografia planeta grupo4">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>9º A/B</h3>
-          <p class="muted">Como afetará geograficamente o planeta</p>
-          <details class="people">
-            <summary>Integrantes</summary>
-            <ul>
-              <li>PEDRO HENRIQUE RODRIGUES MUSTO</li>
-              <li>ANDRE SOARES COSTA ZAULI SANTOS</li>
-              <li>GUSTAVO MIRANDA BARCA</li>
-              <li>JULIO TRINDADE ALONSO</li>
-            </ul>
-          </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=9º%20A/B&subtema=Impacto%20Geográfico">Abrir página</a></div>
-        </article>
-
-        <!-- 1º EM A/B -->
-        <article class="card" data-tags="medio 1em patrimonio mundial grupo5">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>1º EM A/B</h3>
-          <p class="muted">Derretimento acelerado em locais de Patrimônio Mundial</p>
-          <details class="people">
-            <summary>Integrantes</summary>
-            <ul>
-              <li>ARTHUR LORENZO PESSOA FERNANDES</li>
-              <li>GABRIEL BROCKINI ZARDETTO</li>
-            </ul>
-          </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=1º%20EM%20A/B&subtema=Patrimônio%20Mundial">Abrir página</a></div>
-        </article>
-
-        <!-- 2º EM A/B -->
-        <article class="card" data-tags="medio 2em biodiversidade grupo6">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>2º EM A/B</h3>
-          <p class="muted">Impacto na biodiversidade do planeta</p>
-          <details class="people">
-            <summary>Integrantes</summary>
-            <ul>
-              <li>Enzo Moretti Galdino</li>
-              <li>GABRIEL HENRIQUE SANTOS BURATI</li>
-              <li>Igor Jesus Silva</li>
-            </ul>
-          </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=2º%20EM%20A/B&subtema=Biodiversidade">Abrir página</a></div>
-        </article>
-
-        <!-- 3º EM A/B -->
-        <article class="card" data-tags="medio 3em agua doce impactos grupo7">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>3º EM A/B</h3>
-          <p class="muted">Redução de água doce no mundo e impactos</p>
-          <details class="people">
-            <summary>Integrantes</summary>
-            <ul>
-              <li>Andreza Jovelina do Nascimento</li>
-              <li>Julia Moreira Vaz</li>
-              <li>Gabryelly Forcione dos Santos</li>
-            </ul>
-          </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=3º%20EM%20A/B&subtema=Redução%20de%20Água%20Doce">Abrir página</a></div>
-        </article>
-
-        <!-- 1º EM Técnico -->
-        <article class="card" data-tags="tecnico 1em tecnico site grupo8">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>1º EM Técnico</h3>
-          <p class="muted">Projeto de site informativo sobre o evento</p>
-          <details class="people">
-            <summary>Integrantes</summary>
-            <ul>
-              <li>Isabele Ferreira de Lemos</li>
-            </ul>
-          </details>
-          <div class="cta"><a class="btn btn--card" href="../modelo/modelo.html?turma=1º%20EM%20Técnico&subtema=Site%20Oficial">Abrir página</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__wrap">
-      <p><strong>EXPO PT 2025 — Colégio Paulo de Tarso</strong> · 2025 - Isabele F.Lemos</p>
-      <a class="to-top" href="#top" aria-label="Voltar ao topo">↑</a>
-    </div>
-  </footer>
-
-  <!-- INTERAÇÕES -->
-  <script>
-    // Header com sombra ao rolar
-    const header = document.getElementById('site-header');
-    addEventListener('scroll', () => {
-      header.classList.toggle('header--scrolled', scrollY > 8);
-    }, { passive: true });
-
-    // Busca + filtros
-    const grid = document.getElementById('grid');
-    const cards = [...grid.querySelectorAll('.card')];
-    const busca = document.getElementById('busca');
-    const chips = document.querySelectorAll('.chip');
-
-    function aplicaFiltro() {
-      const texto = (busca.value || '').toLowerCase();
-      const ativo = document.querySelector('.chip.is-active')?.dataset.filter || 'todos';
-      cards.forEach(card => {
-        const tags = card.dataset.tags || '';
-        const textoOk = tags.toLowerCase().includes(texto);
-        const filtroOk =
-          ativo === 'todos' ||
-          (ativo === 'fund2' && tags.includes('fund2')) ||
-          (ativo === 'medio' && tags.includes('medio')) ||
-          (ativo === 'tecnico' && tags.includes('tecnico'));
-        card.style.display = (textoOk && filtroOk) ? '' : 'none';
-      });
-    }
-    busca.addEventListener('input', aplicaFiltro);
-    chips.forEach(c => c.addEventListener('click', () => {
-      chips.forEach(x => x.classList.remove('is-active'));
-      c.classList.add('is-active');
-      aplicaFiltro();
-    }));
-  </script>
-  <script src="../js/icefall.js"></script>
-</body>
-</html>
+        <!-- 9
