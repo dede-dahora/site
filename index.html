@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EXPO PT 2025 — Colégio Paulo de Tarso</title>
-  <meta name="description" content="Site oficial da EXPO PT 2025 — Ano Internacional da Preservação das Geleiras." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="snow">
@@ -18,11 +17,13 @@
           <span>Colégio Paulo de Tarso</span>
         </div>
       </a>
+
       <nav class="nav" aria-label="Navegação principal">
         <a href="#convite" class="nav__link">Convite</a>
         <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#tema" class="nav__link">Tema</a>
         <a href="#salas" class="nav__link">Salas</a>
-        <a href="galeria.html" class="nav__link">Galeria</a>
+        <a href="../galeria/galeria.html" class="nav__link">Galeria</a>
       </nav>
     </div>
   </header>
@@ -40,47 +41,9 @@
           <li><strong>Seção 1:</strong> 09:00 — 10:20</li>
           <li><strong>Seção 2:</strong> 10:40 — 12:00</li>
         </ul>
-        <div class="actions">
-          <a class="btn" href="#salas">Ver páginas das turmas</a>
-          <a class="btn outline" href="#sobre">Entenda o evento</a>
-        </div>
       </div>
-      <figure class="convite__img" aria-label="Convite ilustrado">
+      <figure class="convite__img">
         <img src="VENHA-PARA-A-EXPOPT-E-DIVIRTA-SE-removebg-preview.webp" alt="Convite EXPO PT 2025" />
-        <figcaption class="muted">Traga sua família e amigos!</figcaption>
-      </figure>
-    </div>
-    <div id="iceLayer" aria-hidden="true"></div>
-  </section>
-
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="container hero__grid">
-      <div>
-        <h1>2025 — Ano Internacional da Preservação das Geleiras</h1>
-        <p class="muted">Explore os subtemas, descubra soluções e participe de experiências criativas.</p>
-        <div class="actions">
-          <a class="btn" href="#salas">Ver páginas das turmas</a>
-          <a class="btn outline" href="#sobre">Entenda o evento</a>
-        </div>
-      </div>
-      <figure class="hero__art" aria-label="Ilustração de geleiras em SVG">
-        <svg class="ice-hero" viewBox="0 0 640 360" role="img" aria-label="Geleiras">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#7dd3fc"/>
-              <stop offset="100%" stop-color="#0b1522"/>
-            </linearGradient>
-            <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e0f7ff"/>
-              <stop offset="100%" stop-color="#a6e3ff"/>
-            </linearGradient>
-          </defs>
-          <rect width="640" height="360" fill="url(#sky)"/>
-          <polygon points="0,300 120,180 220,300" fill="url(#ice)" opacity="0.95"/>
-          <polygon points="140,300 260,150 360,300" fill="url(#ice)" opacity="0.95"/>
-          <polygon points="300,300 420,190 520,300" fill="url(#ice)" opacity="0.95"/>
-        </svg>
       </figure>
     </div>
   </section>
@@ -89,79 +52,128 @@
   <section id="sobre" class="section">
     <div class="container">
       <h2>Sobre o evento</h2>
-      <ul class="list">
-        <li>✔️ A EXPO PT 2025 será uma exposição realizada no Colégio Paulo de Tarso, com o objetivo de apresentar pesquisas, trabalhos e projetos feitos pelos alunos.</li>
-        <li>✔️ O tema principal deste ano é o <strong>Derretimento das Geleiras</strong>, declarado Ano Internacional das Geleiras pela UNESCO. O derretimento das geleiras impacta o clima global, os oceanos e a biodiversidade.</li>
-        <li>✔️ Seções criativas: textos, infográficos, antes/depois, galeria, vídeo curto e quiz.</li>
-        <li>✔️ Convidamos você a participar da composição da galeria de fotos do evento — registre momentos e ajude a construir a memória da EXPO PT!</li>
-        <li>✔️ Rodapé com créditos dos responsáveis pelo site.</li>
+      <p>A EXPO PT 2025 é a exposição científica e cultural do Colégio Paulo de Tarso. Os alunos apresentam pesquisas e soluções criativas sobre o <strong>derretimento das geleiras</strong> e seus impactos no mundo.</p>
+      <ul>
+        <li><strong>Local:</strong> Rua Mazzini, 61 — Colégio Paulo de Tarso</li>
+        <li><strong>Data:</strong> 17 de setembro de 2025</li>
+        <li><strong>Horários:</strong> 
+          <ul>
+            <li>Seção 1: 09:00 — 10:20</li>
+            <li>Seção 2: 10:40 — 12:00</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- CONTROLES (BUSCA + FILTRO) -->
-  <section class="section section--controls">
-    <div class="container controls">
-      <input id="busca" class="input" type="search" placeholder="Buscar por turma, subtema ou nome…" aria-label="Buscar" />
-      <div class="chips" role="group" aria-label="Filtros">
-        <button class="chip is-active" data-filter="todos">Todos</button>
-        <button class="chip" data-filter="fund2">Fundamental II (6º–9º)</button>
-        <button class="chip" data-filter="medio">Ensino Médio (1º–3º)</button>
-      </div>
+  <!-- TEMA -->
+  <section id="tema" class="section">
+    <div class="container">
+      <h2>Tema Principal — Ano Internacional das Geleiras</h2>
+      <p>Em 2025, a <strong>ONU</strong> declarou o <strong>Ano Internacional da Preservação das Geleiras</strong>, destacando sua importância para o clima, os oceanos e a água doce do planeta. As geleiras estão derretendo rapidamente, trazendo sérias consequências ambientais e sociais. Nossa exposição busca refletir sobre isso e propor soluções.</p>
     </div>
   </section>
 
-  <!-- SALAS & SUBTEMAS -->
+  <!-- SALAS -->
   <section id="salas" class="section">
     <div class="container">
       <h2>Salas & Subtemas</h2>
       <div id="grid" class="grid">
-        <!-- 6º A/B -->
-        <article class="card" data-tags="fund2 mitos verdades 6ab grupo1">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>6º A/B</h3>
-          <p class="muted">Divergências em relação ao tema • Mitos e Verdades</p>
-          <details class="people">
+        <article class="card" data-tags="fund2 6ano mitos verdades">
+          <h3>6º Ano</h3>
+          <p class="muted">Mitos e Verdades</p>
+          <details>
             <summary>Desenvolvedores</summary>
-            <ul>
-              <li>ANA FLÁVIA PACOVA DOS SANTOS</li>
-              <li>Lucas Lohan Felix Araújo</li>
-              <li>GABRIEL OLIVEIRA ROSA</li>
-            </ul>
+            <ul><li>Ana Flávia Pacova</li><li>Lucas Lohan</li><li>Gabriel Oliveira</li></ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="https://hzy1kk.github.io/expt-6A">Abrir página</a></div>
+          <a class="btn btn--card" href="https://hzy1kk.github.io/expt-6A">Abrir página</a>
         </article>
 
-        <!-- 7º A/B -->
-        <article class="card" data-tags="fund2 7ab co2 temperatura grupo2">
-          <div class="thumb" aria-hidden="true"></div>
+        <article class="card" data-tags="fund2 7ano co2 temperatura">
           <h3>7º A/B</h3>
-          <p class="muted">Emissão de CO₂ e aumento de temperatura</p>
-          <details class="people">
+          <p class="muted">Emissão de CO2 e aumento da temperatura</p>
+          <details>
             <summary>Desenvolvedores</summary>
-            <ul>
-              <li>PEDRO HENRIQUE FLORENCIO</li>
-              <li>RODRIGO HERNANDES TARIFA</li>
-              <li>PEDRO YAN CHIN SO HUANG</li>
-            </ul>
+            <ul><li>Turma 7º A/B</li></ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="https://phzineasygame.github.io/neo-expopt">Abrir página</a></div>
+          <a class="btn btn--card" href="https://phzineasygame.github.io/neo-expopt">Abrir página</a>
         </article>
 
-        <!-- 8º A/B -->
-        <article class="card" data-tags="fund2 8ab agua doce impactos grupo3">
-          <div class="thumb" aria-hidden="true"></div>
+        <article class="card" data-tags="fund2 8ano agua">
           <h3>8º A/B</h3>
-          <p class="muted">Redução de água doce no mundo e impactos</p>
-          <details class="people">
+          <p class="muted">Redução de água doce no mundo e seus impactos</p>
+          <details>
             <summary>Desenvolvedores</summary>
-            <ul>
-              <li>Pietro Moliani*</li>
-              <li>FELIPE PRATES FARIAS</li>
-              <li>PIETRO B. C. QUINQUEIRO</li>
-            </ul>
+            <ul><li>Turma 8º A/B</li></ul>
           </details>
-          <div class="cta"><a class="btn btn--card" href="#">Abrir página</a></div>
+          <a class="btn btn--card" href="#">Página em construção</a>
         </article>
 
-        <!-- 9
+        <article class="card" data-tags="fund2 9ano geografia">
+          <h3>9º A/B</h3>
+          <p class="muted">Impactos geográficos do derretimento</p>
+          <details>
+            <summary>Desenvolvedores</summary>
+            <ul><li>Turma 9º A/B</li></ul>
+          </details>
+          <a class="btn btn--card" href="https://pietrosmoliani.github.io/Site-ExpoPt">Abrir página</a>
+        </article>
+
+        <article class="card" data-tags="medio 1ano patrimonio">
+          <h3>1º EM</h3>
+          <p class="muted">Derretimento em Patrimônios Mundiais</p>
+          <details>
+            <summary>Desenvolvedores</summary>
+            <ul><li>Gabriel</li><li>Arthur</li></ul>
+          </details>
+          <a class="btn btn--card" href="https://gabriel0-cmd.github.io/ExpoPt2-trabalho">Abrir página</a>
+        </article>
+
+        <article class="card" data-tags="medio 2ano biodiversidade">
+          <h3>2º EM</h3>
+          <p class="muted">Impacto na biodiversidade</p>
+          <details>
+            <summary>Desenvolvedores</summary>
+            <ul><li>Burati</li><li>Enzo</li><li>Igor</li></ul>
+          </details>
+          <a class="btn btn--card" href="https://burati03.github.io/EXPO-PT-2-EM">Abrir página</a>
+        </article>
+
+        <article class="card" data-tags="medio 3ano agua">
+          <h3>3º EM</h3>
+          <p class="muted">Redução de água doce e preservação</p>
+          <details>
+            <summary>Desenvolvedores</summary>
+            <ul><li>Turma 3º EM</li></ul>
+          </details>
+          <a class="btn btn--card" href="https://dede-dahora.github.io/EXPO-PT-3-EM--PRINCIPAL">Abrir página</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria-invite" class="section">
+    <div class="container">
+      <h2>Galeria de Fotos 📸</h2>
+      <p>Durante a EXPO PT 2025, os visitantes poderão tirar fotos e contribuir para a <strong>Galeria Oficial</strong> do evento. Essa galeria será construída de forma colaborativa, com registros feitos pelos próprios participantes.</p>
+      <a href="../galeria/galeria.html" class="btn">Acessar a Galeria</a>
+    </div>
+  </section>
+
+  <!-- CRÉDITOS -->
+  <section id="creditos" class="section">
+    <div class="container">
+      <h2>Créditos</h2>
+      <p>O <strong>1º Ano do Ensino Médio Técnico</strong> foi responsável por desenvolver este site e a galeria oficial da EXPO PT 2025 como parte do projeto interdisciplinar.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p><strong>EXPO PT 2025 — Colégio Paulo de Tarso</strong> · 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
