@@ -7,11 +7,32 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-	<h1>Galeria de Fotos</h1>
-	<p id="status">Carregando fotos...</p>
-	<section id="grade_fotos"></section>
-	<button id="btn_carregar">Carregar mais</button>
-	<div id="contador"></div>
+		<header id="site-header" class="header">
+			<div class="container header__wrap">
+				<a class="brand" href="#top">
+					<img src="../foto1.webp" alt="Colégio Paulo de Tarso" class="logo" />
+					<div class="brand__text">
+						<strong>EXPO PT 2025</strong>
+						<span>Colégio Paulo de Tarso</span>
+					</div>
+				</a>
+
+				<nav class="nav" aria-label="Navegação principal">
+					<a href="../index.html#convite" class="nav__link">Convite</a>
+					<a href="../index.html#sobre" class="nav__link">Sobre</a>
+					<a href="../index.html#tema" class="nav__link">Tema</a>
+					<a href="../index.html#salas" class="nav__link">Salas</a>
+					<a href="galeria.html" class="nav__link" aria-current="page">Galeria</a>
+				</nav>
+			</div>
+		</header>
+	<main class="conteudo">
+		<h2>Galeria de Fotos</h2>
+		<p id="status">Carregando fotos...</p>
+		<section id="grade_fotos"></section>
+		<button id="btn_carregar">Carregar mais</button>
+		<div id="contador"></div>
+	</main>
 	<script src="../script/galeria.js" defer></script>
 </body>
 </html>
