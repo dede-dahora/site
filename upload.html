@@ -6,23 +6,31 @@
   <title>EXPO PT — Envie sua foto</title>
 
   <!-- Estilos (pode simplificar ainda mais para o desafio) -->
+  <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/upload.css">
 
   <!-- Seu JS. O defer garante que o DOM já exista quando o script rodar -->
   <script src="scripts/script.js" defer></script>
 </head>
 <body>
-  <header class="cabecalho">
-    <div class="conteudo">
-      <div class="topo">
-        <h1 class="titulo">Galeria — EXPO PT</h1>
-        <nav class="menu" aria-label="Navegação principal">
-          <a href="index.html" class="item-menu">Enviar foto</a>
-          <a href="galeria.html" class="item-menu" aria-current="page">Galeria</a>
-        </nav>
-      </div>
-      <p class="subtitulo">Fotos aprovadas pela moderação. Clique para ver detalhes do arquivo.</p>
+  <header id="site-header" class="header">
+    <div class="container header__wrap">
+      <a class="brand" href="#top">
+        <img src="../foto1.webp" alt="Colégio Paulo de Tarso" class="logo" />
+        <div class="brand__text">
+          <strong>EXPO PT 2025</strong>
+          <span>Colégio Paulo de Tarso</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="../index.html#convite" class="nav__link">Convite</a>
+        <a href="../index.html#sobre" class="nav__link">Sobre</a>
+        <a href="../index.html#tema" class="nav__link">Tema</a>
+        <a href="../index.html#salas" class="nav__link">Salas</a>
+        <a href="galeria.html" class="nav__link">Galeria</a>
+            <a href="upload.html" class="nav__link">Upload</a>
+      </nav>
     </div>
   </header>
 
@@ -59,5 +67,6 @@
       <iframe name="janela_envio" style="display:none"></iframe>
     </div>
   </main>
+  <script src="script/upload.js" defer></script>
 </body>
 </html>

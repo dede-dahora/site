@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Galeria de Fotos do Evento</title>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/galeria.css">
 </head>
 <body>
 		<header id="site-header" class="header">
@@ -22,17 +24,21 @@
 					<a href="../index.html#sobre" class="nav__link">Sobre</a>
 					<a href="../index.html#tema" class="nav__link">Tema</a>
 					<a href="../index.html#salas" class="nav__link">Salas</a>
-					<a href="galeria.html" class="nav__link" aria-current="page">Galeria</a>
+					<a href="galeria.html" class="nav__link">Galeria</a>
+        			<a href="upload.html" class="nav__link">Upload</a>
 				</nav>
 			</div>
 		</header>
 	<main class="conteudo">
 		<h2>Galeria de Fotos</h2>
 		<p id="status">Carregando fotos...</p>
-		<section id="grade_fotos"></section>
+		<section id="grade_fotos">
+
+			
+		</section>
 		<button id="btn_carregar">Carregar mais</button>
 		<div id="contador"></div>
 	</main>
-	<script src="../script/galeria.js" defer></script>
+	<script src="script/galeria.js" defer></script>
 </body>
 </html>
